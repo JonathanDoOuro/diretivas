@@ -1,0 +1,15 @@
+<h5>
+  *ngif
+</h5>
+
+<div *ngIf="mostrarCurso; else semCurso">
+  Lista de Cursos
+</div>
+
+<ng-template #semCurso>
+  Não existem cursos para serem listados.
+</ng-template>
+
+<div>
+  <button (click)="onMostrar()" >Mostrar/esconder</button>
+</div>
